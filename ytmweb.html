@@ -2,6 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>YTM's Web Page</title>
     <style>
         body,html{
@@ -82,18 +83,7 @@
         height:100vh;
         overflow: hidden;
       }
-      
-      .text-in-image{
-        color:white;
-        position:absolute;
-        bottom:0;
-        left:0;
-        font-size:20px;
-        z-index:10;
-        background: rgba(0,0,0,0.4);
-        padding:5px 10px;
-        border-radius:5px;
-      }
+        
       .para{
         position: absolute;
         font-size:20px;
@@ -109,8 +99,8 @@
       .text-in-image {
   position: absolute;
   bottom:0;
-  left: 250px;
-  width: 63.8%;
+  left: 5%;
+  width: 90%;
   height:2%;
   padding: 15px 30px;
   background: rgba(0, 0, 0, 0); /* translucent black overlay */
@@ -139,7 +129,7 @@
       }
       .section{
         display: flex;
-        position: absolute;
+        
         top: 10px;
         left:40px;
         gap: 10px;
@@ -207,6 +197,67 @@
      .diff{
       margin-top:120px;
      }
+     @media screen and (max-width: 768px) {
+  h1 {
+    font-size: 36px;
+    left: 10px;
+  }
+
+  .menu {
+    flex-direction: column;
+    top: 7px;
+    right: 10px;
+    background-color: white;
+    padding: 10px;
+  }
+
+  .search-box {
+    flex-direction: column;
+    top: 140px;
+    left: 10px;
+    width: 90%;
+  }
+
+  .search-box input {
+    width: 100%;
+    padding: 8px;
+    border-radius: 20px;
+  }
+
+  .search-box button {
+    margin-top: 8px;
+    border-radius: 20px;
+    width: 100%;
+  }
+
+  .section ul {
+    flex-direction: column;
+    top: 200px;
+    left: 10px;
+    gap: 10px;
+  }
+
+  .text-in-image {
+    font-size: 14px;
+    width: 90%;
+    left: 5%;
+  }
+
+  .hero-img {
+    height: 50vh;
+    object-fit: cover;
+  }
+
+  .item {
+    font-size: 16px;
+    margin-left: 0;
+  }
+
+  .top-banner {
+    padding: 10px;
+  }
+}
+
 
     </style>
   </head>
